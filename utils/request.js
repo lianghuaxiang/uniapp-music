@@ -6,7 +6,7 @@ function request({url,data,method="GET",contentType=1}){
   let header={
     'content-type':contentType===1?'application/json':'application/x-www-form-urlencoded'
   }
-  let baseUrl='http://localhost:3000'
+  let baseUrl='http://music.cpengx.cn'
   // debugger
   return new Promise((resolve,reject)=>{
     uni.request({
